@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forget Password</h1>
+
+      <p>Enter your Email or Phone Number</p>
+      <input
+        type="text"
+        name=""
+        id="userInput"
+        placeholder="Email or Phone Number"
+      />
+      <button id="btn1" onclick="handleRequest()">Request Password Reset</button>
+      <p id="message"></p>
+
+      <h3>Generated Password</h3>
+      <button id="btn2" onclick="generatePassword()">Generate Password</button>
+      <p id="generatedPassword"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

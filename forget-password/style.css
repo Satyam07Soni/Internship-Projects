@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background and Font */
+body {
+  font-family: Georgia;
+  background: linear-gradient(to right, #0C0C0C, #4834D4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styling */
+.container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow:5px 10px 30px rgba(150, 150, 150, 0.863);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+}
+
+/* Headings */
+.container h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #0e0101;
+}
+
+.container h3 {
+  margin-top: 30px;
+  color: #444;
+
+}
+
+/* Paragraphs */
+.container p {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Input Field */
+#userInput {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1.5px solid #8bbef9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+#userInput:focus {
+  border-color: #0b86d8;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 153, 255, 0.25);
+}
+
+/* Buttons */
+#btn1,
+#btn2 {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btn1 {
+  background-color: #000204;
+}
+
+#btn1:hover {
+  background-color: #14ade9;
+  transform: translateY(2px);
+}
+
+#btn2 {
+  background-color: #000000;
+}
+
+#btn2:hover {
+  background-color: #14ade9;
+  transform: translateY(-2px);
+}
+
+/* Output Messages */
+#message {
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(255, 0, 0);
+}
+
+#generatedPassword {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b10000;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  #btn1,
+  #btn2 {
+    font-size: 0.95rem;
+  }
+
+  #userInput {
+    font-size: 0.95rem;
+  }
+}

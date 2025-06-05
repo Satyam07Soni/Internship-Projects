@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Location Traker</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="Container">
+      <div id="profile-card">
+        <h1 id="subheading">User Location Tracker</h1>
+        <p id="subheading">
+          Click below to get your current location, weather and map view.
+        </p>
+
+        <div id="btn1">
+        <button id="btn2" onclick="getLocation()">📍 Obtain Location</button>
+
+            </div>
+            <div id="location"></div>
+            <div id="weather"></div>
+            <div id="map"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Ti5WWOQoj6hn38vegO5tGR1W0_4Djr0">
+  </script>
+  </body>
+</html>
+
